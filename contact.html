@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact BAC Navigation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BAC Chronicles</title>
+    <style>
+        /* Shared CSS */
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f4; }
+        header { background-color: #800080; color: white; padding: 40px 20px; text-align: center; }
+        nav { background-color: #333; display: flex; justify-content: center; flex-wrap: wrap; padding: 10px 0; position: sticky; top: 0; }
+        nav a { color: white; text-decoration: none; padding: 12px 20px; font-weight: bold; }
+        .container { max-width: 600px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h2 { color: #800080; border-bottom: 2px solid #800080; padding-bottom: 10px; }
+
+        /* Form Styling */
+        label { display: block; margin-top: 15px; font-weight: bold; color: #555; }
+        input, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        button { background-color: #0078d4; color: white; border: none; padding: 12px 20px; margin-top: 20px; border-radius: 20px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background-color: #005a9e; }
+
+        footer { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; margin-top: 40px; }
+    </style>
 </head>
-
 <body>
+    <header><h1>Student Communication System</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="directions.html">Directions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Send a Message</h2>
+        <form>
+            <label>To:</label>
+            <input type="text" value="servicedesk.bac" readonly>
 
-<!-- Navigation -->
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="locations.html">Locations</a> |
-  <a href="directions.html">Directions</a> |
-  <a href="contact.html">Contact</a>
-</nav>
+            <label>From (Student Username):</label>
+            <input type="text" placeholder="e.g. bida25-339">
 
-<hr>
+            <label>Reason for Enquiry:</label>
+            <textarea rows="4" placeholder="Explain your issue here..."></textarea>
 
-<h1>Student Communication System (Outlook Style)</h1>
-
-<p>
-All communication at BAC is done through Outlook. Each student is identified using their username/email.
-</p>
-
-<h2>Send a Message</h2>
-
-<form>
-
-  <label>To:</label><br>
-  <input type="text" value="servicedesk.bac" readonly><br><br>
-
-  <label>From (Student Username):</label><br>
-  <input type="text" placeholder="e.g. bida25-339"><br><br>
-
-  <label>Name (Username Only):</label><br>
-  <input type="text" placeholder="Must match student username"><br><br>
-
-  <label>Reason for Enquiry:</label><br>
-  <textarea rows="5" cols="40" placeholder="Explain your issue or request here"></textarea><br><br>
-
-  <button type="submit">Send Message</button>
-
-</form>
-
-<hr>
-
-<p><b>Note:</b> All students are identified by username/email, not personal names.</p>
-
-<p><b>Created as a school project – BAC Campus Navigation System</b></p>
-
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="font-size: 0.8rem; color: #777; margin-top: 20px;">Note: All students are identified by username/email, not personal names.</p>
+    </div>
+    <footer>Created as a school project – BAC Campus Navigation System</footer>
 </body>
 </html>
