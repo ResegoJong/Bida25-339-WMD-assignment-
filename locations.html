@@ -1,136 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BAC Campus Locations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - BAC Chronicles</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f4; }
+        header { background-color: #800080; color: white; padding: 40px 20px; text-align: center; }
+        nav { background-color: #333; display: flex; justify-content: center; flex-wrap: wrap; padding: 10px 0; position: sticky; top: 0; }
+        nav a { color: white; text-decoration: none; padding: 12px 20px; font-weight: bold; }
+        .container { max-width: 1000px; margin: 20px auto; background: white; padding: 30px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #800080; padding-bottom: 10px; color: #800080; }
+        
+        /* Table Styling */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        tr:nth-child(even) { background-color: #fafafa; }
+
+        footer { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
+        @media (max-width: 600px) { nav a { flex: 1 1 30%; font-size: 14px; } .container { padding: 15px; } }
+    </style>
 </head>
-
 <body>
+    <header><h1>BAC Campus Locations & Transport</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="directions.html">Directions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Campus Locations</h2>
+        <table>
+            <tr><th>Campus</th><th>Location</th><th>Notes</th></tr>
+            <tr><td>BNPC Campus</td><td>BNPC Area</td><td>Primary BAC campus</td></tr>
+            <tr><td>Main Campus</td><td>Fairgrounds</td><td>Primary BAC campus (computer labs & lectures)</td></tr>
+            <tr><td>Windsor Inn</td><td>Mogoditshane</td><td>Uses school transport</td></tr>
+            <tr><td>Nico Campus</td><td>Mogoditshane</td><td>Uses school transport</td></tr>
+        </table>
 
-<!-- Navigation -->
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="locations.html">Locations</a> |
-  <a href="directions.html">Directions</a> |
-  <a href="contact.html">Contact</a>
-</nav>
+        <h2>School Transport Schedule (Mogoditshane)</h2>
+        <table>
+            <tr><th>Time</th><th>Route</th></tr>
+            <tr><td>07:00</td><td>Campus → School</td></tr>
+            <tr><td>07:05</td><td>School → Campus</td></tr>
+            <tr><td>17:15</td><td>School → Campus</td></tr>
+        </table>
 
-<hr>
-
-<h1>BAC Campus Locations & Transport Guide</h1>
-
-<h2>Campus Locations</h2>
-
-<table border="1">
-  <tr>
-    <th>Campus</th>
-    <th>Location</th>
-    <th>Notes</th>
-  </tr>
-
-  <tr>
-    <td>BNPC Campus</td>
-    <td>BNPC Area</td>
-    <td>Learning centre campus</td>
-  </tr>
-
-  <tr>
-    <td>Main Campus</td>
-    <td>Fairgrounds</td>
-    <td>Primary BAC campus (computer labs & lectures)</td>
-  </tr>
-
-  <tr>
-    <td>Windsor Inn</td>
-    <td>City area</td>
-    <td>Lecture and support site</td>
-  </tr>
-
-  <tr>
-    <td>Nico Campus</td>
-    <td>Mogoditshane</td>
-    <td>Uses school transport</td>
-  </tr>
-</table>
-
-<br>
-
-<h2>School Transport Schedule (Mogoditshane Campus)</h2>
-
-<table border="1">
-  <tr>
-    <th>Time</th>
-    <th>Route</th>
-  </tr>
-
-  <tr><td>07:00</td><td>Campus → School</td></tr>
-  <tr><td>07:05</td><td>School → Campus</td></tr>
-  <tr><td>09:30</td><td>Campus → School</td></tr>
-  <tr><td>10:15</td><td>School → Campus</td></tr>
-  <tr><td>13:30</td><td>Campus → School</td></tr>
-  <tr><td>14:15</td><td>School → Campus</td></tr>
-  <tr><td>16:30</td><td>Campus → School</td></tr>
-  <tr><td>17:15</td><td>School → Campus</td></tr>
-</table>
-
-<hr>
-
-<h2>Campus Facilities & Hours</h2>
-
-<table border="1">
-  <tr>
-    <th>Facility</th>
-    <th>Opening</th>
-    <th>Closing</th>
-  </tr>
-
-  <tr>
-    <td>Clinic</td>
-    <td>07:00</td>
-    <td>00:00</td>
-  </tr>
-
-  <tr>
-    <td>Library</td>
-    <td>07:00</td>
-    <td>19:00</td>
-  </tr>
-
-  <tr>
-    <td>All Nighter Study Area</td>
-    <td>17:00</td>
-    <td>23:59 (leave allowed)</td>
-  </tr>
-
-  <tr>
-    <td>All Nighter Study Area</td>
-    <td>00:00</td>
-    <td>06:00 (no leaving allowed)</td>
-  </tr>
-
-  <tr>
-    <td>Gradebook System</td>
-    <td>07:00</td>
-    <td>07:00 (24/7 access)</td>
-  </tr>
-</table>
-
-<h2>About Gradebook</h2>
-
-<p>
-Gradebook is an online system used by students to access academic information such as:
-</p>
-
-<ul>
-  <li>Student accommodation details</li>
-  <li>Exam results</li>
-  <li>Attendance capture</li>
-  <li>Attendance records table</li>
-</ul>
-
-<hr>
-
-<p><b>Created as a school project – BAC Campus Navigation System</b></p>
-
+        <h2>Campus Facilities & Hours</h2>
+        <table>
+            <tr><th>Facility</th><th>Opening</th><th>Closing</th></tr>
+            <tr><td>Clinic</td><td>07:00</td><td>00:00</td></tr>
+            <tr><td>Library</td><td>07:00</td><td>19:00</td></tr>
+            <tr><td>Gradebook System</td><td>07:00</td><td>07:00 (24/7)</td></tr>
+        </table>
+    </div>
+    <footer>Created as a school project – BAC Campus Navigation System</footer>
 </body>
 </html>
