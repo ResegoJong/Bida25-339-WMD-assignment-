@@ -4,45 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAC Chronicles</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header / Banner Section */
+        header {
+            background-color: #800080; /* Purple background */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: none;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333; /* Dark gray bar */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Main Content Area */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>BAC CHRONICLES</h1>
-        <div class="home-tab">Home</div>
+        <h1>BAC Campus Navigation Guide</h1>
     </header>
 
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="locations.html">Location</a></li>
-                <li><a href="directions.html">Directions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Location</a>
+        <a href="#">Directions</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        <main class="content">
-            <h2>Welcome to BAC Campus Navigation Guide</h2>
-            <p>This website helps students and visitors easily find their way around BAC campus. It provides information about key locations, directions, and campus guidelines.</p>
-            
-            <h3>Purpose of this Website</h3>
-            <ul>
-                <li>Help new students navigate BAC easily</li>
-                <li>Show important campus locations</li>
-                <li>Provide directions around the school</li>
-                <li>Share campus rules and times</li>
-            </ul>
+    <main>
+        <h2>Welcome</h2>
+        <p>This website helps students and visitors easily find their way around BAC campus. It provides information about key locations, directions, and campus guidelines.</p>
 
-            <h3>Campus Tips</h3>
-            <ul>
-                <li>Always arrive before 08:00 for classes</li>
-                <li>Ask for help if you are lost</li>
-                <li>Respect campus rules and facilities</li>
-            </ul>
-        </main>
-    </div>
+        <h3>Purpose of this Website</h3>
+        <ul>
+            <li>Help new students navigate BAC easily</li>
+            <li>Show important campus locations</li>
+            <li>Provide directions around the school</li>
+            <li>Share campus rules and times</li>
+        </ul>
+
+        <h3>Campus Tips</h3>
+        <ul>
+            <li>Always arrive before 08:00 for classes</li>
+            <li>Ask for help if you are lost</li>
+            <li>Respect campus rules and facilities</li>
+        </ul>
+    </main>
 
     <footer>
         Created as a school project – BAC Campus Navigation System
