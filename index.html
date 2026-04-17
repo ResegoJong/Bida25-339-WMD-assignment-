@@ -5,41 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAC Chronicles</title>
     <style>
-        /* General Styles */
+        /* Prevents horizontal scrolling */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
+            overflow-x: hidden; /* Keeps everything inside the page */
         }
 
-        /* Header / Banner Section */
+        /* Purple Header */
         header {
-            background-color: #800080; /* Purple background */
+            background-color: #800080;
             color: white;
-            padding: 40px 20px;
+            padding: 40px 15px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            text-transform: none;
+            font-size: 1.8rem; /* Scaled down for mobile screens */
         }
 
-        /* Navigation Bar */
+        /* Fixed Navigation */
         nav {
-            background-color: #333; /* Dark gray bar */
+            background-color: #333;
             display: flex;
-            justify-content: center;
-            padding: 10px 0;
+            justify-content: center; /* Centers links */
+            flex-wrap: wrap; /* Allows links to wrap to next line if screen is too small */
+            padding: 5px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 12px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
 
@@ -47,39 +53,24 @@
             color: #ddd;
         }
 
-        /* Main Content Area */
+        /* Content Area */
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
+            max-width: 100%; /* Ensures it fits mobile */
+            padding: 20px;
         }
 
         h2 {
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
-            font-size: 1.8rem;
         }
 
-        h3 {
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Footer Section */
+        /* Footer */
         footer {
             background-color: #1a1a1a;
             color: white;
             padding: 20px;
-            margin-top: 50px;
-            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: left;
         }
     </style>
 </head>
@@ -90,11 +81,11 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Location</a>
-        <a href="#">Directions</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="location.html">Location</a>
+        <a href="directions.html">Directions</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main>
